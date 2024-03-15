@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Создание резких переходов */
+body {
+    background: linear-gradient(to bottom left, cyan 50%, palegoldenrod 50%);
+    margin: 40px;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/* Линейные градиенты */
+
+/* Наслаивание градиентов */
+.box-1 {
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+                linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+                linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+    border: 3px solid black;
+    box-shadow: 3px 3px 10px black;
+    /*background-color
+    background-image: url(); 
+    Background-repeat: repeat-x/ repeat-y/ repeat/
+    space/ round/ no-repeat/ space repeat
+    Background-attachment: scroll/ fixed/ local - ключевые значения
+    Background-attachment: inherit/ initial/ unset - глобальные значения
+    Background-position: top/ bottom/ right/ left/ center
+    Background-position: 25% 75%/ bottom 50px right 100px
+    Background-size: cover/ contain
+    Background-size: 50% /15px / auto
+    Background: цвет, изображение, источник, размер, повтор*/
+}
+/* Расположение точек остановок цветов */
+.box-2 {
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to left,lime 28px, red 77%, cyan);
+    border: 3px solid black;
+    box-shadow: 3px 3px 10px black;
+}
+/* Создание цветных линий и полосок */
+.box-3 {
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to left,lime 25%, red 25% 50%, cyan 50% 75%, yellow 75%);
+    border: 3px solid black;
+    box-shadow: 3px 3px 10px black;
+}
+/* Использование более двух цветов */
+.box-4 {
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(red, yellow, blue, orange);
+    border: 3px solid black;
+    box-shadow: 3px 3px 10px black;
+}
+/* Радиальные(круговые) градиенты */
+
+/* Наложение круговых градиентов */
+.box-5 {
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle at 50% 0, rgba(255, 0, 0, .5), rgba(255, 0, 0, 0) 70.71%), 
+                radial-gradient(circle at 6.7% 75%, rgba(0, 0, 255, .5), rgba(0, 0, 255, 0) 70.71%), 
+                radial-gradient(circle at 93.3% 75%, rgba(0, 255, 0, .5), rgba(0, 255, 0, 0) 70.71%)
+                beige;
+    border: 3px solid black;
+    box-shadow: 3px 3px 10px black;
+}
+/* Задание размеров кругового градиента
+    Ближайшая сторона для круга */
+.box-6 {
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle closest-side at 25% 75%, red, yellow 10%, #1e90ff 50%, beige);
+    border: 3px solid black;
+    box-shadow: 3px 3px 10px black;
+}
+/* Задание размеров кругового градиента
+    Самый дальний угол для эллипса*/
+.box-7 {
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(ellipse farthest-corner at 90% 90%, red 10px, yellow 30%, #1e90ff 50%);
+    border: 3px solid black;
+    box-shadow: 3px 3px 10px black;
+}
+/* Задание размеров кругового градиента
+    Ближайшая сторона для эллипса */
+.box-8 {
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(ellipse closest-side, red, yellow 10%, #1e90ff 50%, beige);
+    border: 3px solid black;
+    box-shadow: 3px 3px 10px black;
+}
+/* Конические градиенты */
+/* Обычный конический градиент */
+.box-9 {
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    background: conic-gradient(red, blue);
+    border: 3px solid black;
+    box-shadow: 3px 3px 10px black;
+}
+/* Расположение конического центра */
+.box-10 {
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    background: conic-gradient(at 0% 30%, red 10%, yellow 30%, #1e90ff 50%);
+    border: 3px solid black;
+    box-shadow: 3px 3px 10px black;
+}
+/* Изменение угла */
+.box-11 {
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    background: conic-gradient(from 45deg, red, orange, yellow, green, blue, purple);
+    border: 3px solid black;
+    box-shadow: 3px 3px 10px black;
+}
+/* Повторяющиеся градиенты */
+
+/* Повторяющиеся линейные градиенты */
+.box-12 {
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    background: repeating-linear-gradient(-45deg, red, red 5px, blue 5px, blue 10px);
+    border: 3px solid black;
+    box-shadow: 3px 3px 10px black;
+}
+/* Множественные повторяющиеся линейные градиенты */
+.box-13 {
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    background: repeating-linear-gradient(190deg, rgba(255, 0, 0, 0.5) 40px,
+                    rgba(255, 153, 0, 0.5) 80px, rgba(255, 255, 0, 0.5) 120px,
+                    rgba(0, 255, 0, 0.5) 160px, rgba(0, 0, 255, 0.5) 200px, 
+                    rgba(75, 0, 130, 0.5) 240px, rgba(238, 130, 238, 0.5) 280px,
+                    rgba(255, 0, 0, 0.5) 300px),
+                repeating-linear-gradient(-190deg, rgba(255, 0, 0, 0.5) 30px, 
+                    rgba(255, 153, 0, 0.5) 60px, rgba(255, 255, 0, 0.5) 90px,
+                    rgba(0, 255, 0, 0.5) 120px, rgba(0, 0, 255, 0.5) 150px,
+                    rgba(75, 0, 130, 0.5) 180px, rgba(238, 130, 238, 0.5) 210px,
+                    rgba(255, 0, 0, 0.5) 230px),
+                repeating-linear-gradient(23deg, red 50px, orange 100px, 
+                    yellow 150px, green 200px, blue 250px, indigo 300px,
+                    violet 350px, red 370px);
+    border: 3px solid black;
+    box-shadow: 3px 3px 10px black;
+}
+/* Клетчатый градиент */
+.box-14 {
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    background: repeating-linear-gradient(90deg, transparent, transparent 50px,
+                    rgba(255, 127, 0, 0.25) 50px, rgba(255, 127, 0, 0.25) 56px,
+                    transparent 56px, transparent 63px, rgba(255, 127, 0, 0.25) 63px,
+                    rgba(255, 127, 0, 0.25) 69px, transparent 69px, transparent 116px, 
+                    rgba(255, 206, 0, 0.25) 116px, rgba(255, 206, 0, 0.25) 166px),
+                repeating-linear-gradient(0deg, transparent, transparent 50px,
+                    rgba(255, 127, 0, 0.25) 50px, rgba(255, 127, 0, 0.25) 56px,
+                    transparent 56px, transparent 63px, rgba(255, 127, 0, 0.25) 63px,
+                    rgba(255, 127, 0, 0.25) 69px, transparent 69px, transparent 116px, 
+                    rgba(255, 206, 0, 0.25) 116px, rgba(255, 206, 0, 0.25) 166px),
+                repeating-linear-gradient(-45deg, transparent, transparent 5px,
+                    rgba(143, 77, 63, 0.25) 5px, rgba(143, 77, 63, 0.25) 10px),
+                repeating-linear-gradient(45deg, transparent, transparent 5px,
+                    rgba(143, 77, 63, 0.25) 5px, rgba(143, 77, 63, 0.25) 10px);
+    background: repeating-linear-gradient(90deg, transparent 0 50px,
+                    rgba(255, 127, 0, 0.25) 50px 56px, transparent 56px 63px,
+                    rgba(255, 127, 0, 0.25) 63px 69px,
+                    transparent 69px 116px, rgba(255, 206, 0, 0.25) 116px 166px),
+                repeating-linear-gradient(0deg, transparent 0 50px,
+                    rgba(255, 127, 0, 0.25) 50px 56px, transparent 56px 63px rgba(255, 127, 0, 0.25) 63px 69px,
+                    transparent 69px 116px, rgba(255, 206, 0, 0.25) 116px 166px),
+                repeating-linear-gradient(-45deg, transparent 0 5px,
+                    rgba(143, 77, 63, 0.25) 5px 10px),
+                repeating-linear-gradient(45deg, transparent 0 5px,
+                    rgba(143, 77, 63, 0.25) 5px 10px);
+    border: 3px solid black;
+    box-shadow: 3px 3px 10px black;
+}
+/* Повторяющиеся круговые градиенты */
+.box-15 {
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    background: repeating-radial-gradient(black , black 5px, white 5px, white 10px);
+    border: 3px solid black;
+    box-shadow: 3px 3px 10px black;
+}
+/* Множественные повторяющиеся круговые градиенты */
+.box-16 {
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    background: repeating-radial-gradient(ellipse at 80% 50%, rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5) 15px, rgba(255, 255, 255, 0.5) 15px,
+                    rgba(255, 255, 255, 0.5) 30px) top left no-repeat,
+                repeating-radial-gradient(ellipse at 20% 50%, rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5) 10px, rgba(255, 255, 255, 0.5) 10px,
+                    rgba(255, 255, 255, 0.5) 20px) top left no-repeat yellow;
+    border: 3px solid black;
+    box-shadow: 3px 3px 10px black;
+}
