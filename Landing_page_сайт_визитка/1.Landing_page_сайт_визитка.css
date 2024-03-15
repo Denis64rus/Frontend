@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 200px;
+    background: repeating-linear-gradient(90deg, transparent, transparent 50px,
+                    rgba(255, 127, 0, 0.25) 50px, rgba(255, 127, 0, 0.25) 56px,
+                    transparent 56px, transparent 63px, rgba(255, 127, 0, 0.25) 63px,
+                    rgba(255, 127, 0, 0.25) 69px, transparent 69px, transparent 116px, 
+                    rgba(255, 206, 0, 0.25) 116px, rgba(255, 206, 0, 0.25) 166px),
+                repeating-linear-gradient(0deg, transparent, transparent 50px,
+                    rgba(255, 127, 0, 0.25) 50px, rgba(255, 127, 0, 0.25) 56px,
+                    transparent 56px, transparent 63px, rgba(255, 127, 0, 0.25) 63px,
+                    rgba(255, 127, 0, 0.25) 69px, transparent 69px, transparent 116px, 
+                    rgba(255, 206, 0, 0.25) 116px, rgba(255, 206, 0, 0.25) 166px),
+                repeating-linear-gradient(-45deg, transparent, transparent 5px,
+                    rgba(143, 77, 63, 0.25) 5px, rgba(143, 77, 63, 0.25) 10px),
+                repeating-linear-gradient(45deg, transparent, transparent 5px,
+                    rgba(143, 77, 63, 0.25) 5px, rgba(143, 77, 63, 0.25) 10px);
+    background: repeating-linear-gradient(90deg, transparent 0 50px,
+                    rgba(255, 127, 0, 0.25) 50px 56px, transparent 56px 63px,
+                    rgba(255, 127, 0, 0.25) 63px 69px,
+                    transparent 69px 116px, rgba(255, 206, 0, 0.25) 116px 166px),
+                repeating-linear-gradient(0deg, transparent 0 50px,
+                    rgba(255, 127, 0, 0.25) 50px 56px, transparent 56px 63px rgba(255, 127, 0, 0.25) 63px 69px,
+                    transparent 69px 116px, rgba(255, 206, 0, 0.25) 116px 166px),
+                repeating-linear-gradient(-45deg, transparent 0 5px,
+                    rgba(143, 77, 63, 0.25) 5px 10px),
+                repeating-linear-gradient(45deg, transparent 0 5px,
+                    rgba(143, 77, 63, 0.25) 5px 10px);
+}
+
+header {
+    text-align: center;
+    background-color: #4c2f27;
+    padding: 50px 0;
+    font-weight: bold;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+}
+
+h1 {
+    font-size: 36px; 
+    text-transform: uppercase;
+}
+
+.profession{
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #4c2f27;
+    padding: 20px;
+    font-weight: bold;
+
+}
+
+.footerContacts {
+    color: white;
+    padding: 10px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+footer a {
+    color: #e99f4b;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer li {
+    list-style-type: none;
+    width: 50%;
+    padding: 10px;
+}
+
+.copyright {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.summary {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.summary img {
+    margin-right: 20px;
+    float: left;
+    transition: transform 1s ease;
+}
+
+.summary img:hover {
+    transform: scale(1.3);
+}
+
+h2 {
+    color: #2F5A78;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+section {
+    margin: 20px;
+    padding: 10px;
+}
+
+ul {
+    margin: 0px;
+}
+
+li b {
+    color: #2F5A78;
+}
+
+li {
+    color: #2F5A78;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 3px solid black;
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+}
+
+th {
+    background-color: #2F5A78;
+    color: #ffffff;
+}
+
+tr:nth-child(2) {
+    background-color: white;
+}
+
+ tr:nth-child(3) {
+    background-color: white;
+}
+
+.contactForm {
+    width: 400px;
+}
+
+div {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+    color:#2F5A78;
+    width:80px;
+    margin-left: 20px;
+    padding: 3px;
+}
+
+input[type='submit'] {
+    background-color: #2F5A78;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: 300;
+    color: white;
+    cursor: pointer;
+    margin: 10px 10px 10px 120px;
+    font-size: 16px;
+}
+
+input[type='submit']:hover {
+    background-color: #4c2f27;
+}
+
+input[type='text']{
+    border: 2px solid #2F5A78;
+}
+
+input[type='email']{
+    border: 2px solid #2F5A78;
+}
+
+textarea {
+    border: 2px solid #2F5A78;
+    height: 100px;  
+}
+
+
+
