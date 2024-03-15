@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    height: 100px;
+    background: rgb(6, 39, 99);
+    display: flex;
+    /* Раскидываем логотип и меню по разным краям */
+    justify-content: space-between;
+    /* Размещаем элементы по центру по вертикали */
+    align-items: center;
+    padding: 0 50px;
+}
+.menu {
+    /* Убираем маркеры у списка */
+    list-style: none;
+    /* Чтобы по вертикали содержимое встало по центру */
+    height: 100%;
+    /* Для выравнивания элементов по центру */
+    display: flex;
+    align-items: center;
+}
+.logo {
+    text-transform: uppercase;
+    color: rgb(52, 179, 253);
+    text-decoration: none;
+    font-size: 40px;
+}
+.link {
+    color: #fff;
+    font-size: 20px;
+    /* Убираем подчеркивание у ссылок */
+    text-decoration: none;
+    margin-left: 20px;
+}
+/* Используем псевдокласс для указания особого состояния ссылки*/
+/* В данном случае при наведении курсором на ссылку меняется цвет шрифта*/
+.link:hover {
+    color: rgb(114, 173, 240);
+}

@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto';
+    background: #FFFDED;
+}
+.header-title {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #4E3835;
+}
+.main-title {
+    font-weight: 700;
+font-size: 48px;
+text-align: center;
+color: #E6D5B9;
+
+}
+.main-image {
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    margin: 0 140px;
+}
+.join {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #4E3835;
+}
+.join-title {
+    margin-bottom: 34px;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #E6D5B9;
+}
+.join-text {
+    margin-bottom: 55px;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.email {
+    color: #E6D5B9;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+}
+
+/* навигация */
+nav {
+    height: 100px;
+    background: #4E3835;
+    display: flex;
+    /* Раскидываем логотип и меню по разным краям */
+    justify-content: space-between;
+    /* Размещаем элементы по центру по вертикали */
+    align-items: center;
+    padding: 0 50px;
+}
+.menu {
+    /* Убираем маркеры у списка */
+    list-style: none;
+    /* Чтобы по вертикали содержимое встало по центру */
+    height: 100%;
+    /* Для выравнивания элементов по центру */
+    display: flex;
+    align-items: center;
+}
+.logo {
+    text-transform: uppercase;
+    color: #E6D5B9;
+    text-decoration: none;
+    font-size: 40px;
+}
+.link {
+    color: #fff;
+    font-size: 20px;
+    /* Убираем подчеркивание у ссылок */
+    text-decoration: none;
+    margin-left: 20px;
+}
+/* Используем псевдокласс для указания особого состояния ссылки*/
+/* В данном случае при наведении курсором на ссылку меняется цвет шрифта*/
+.link:hover {
+    color: #E6D5B9;
+}
